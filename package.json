@@ -15,9 +15,7 @@
     "express-handlebars": "^6.0.7",
     "hbs": "~4.0.4",
     "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
-  },
-  "devDependencies": {
+    "morgan": "~1.9.1",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.5",
     "connect-livereload": "^0.6.1",
