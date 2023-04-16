@@ -1,5 +1,38 @@
-html,
+html {
+  max-width: 1980px;
+}
+
+.mybgcolor 
+{
+  background-color: #ffefbf; 
+}
+
+.yellowrow {
+  background-color: #e9c352;
+}
+
+.bluerow {
+  background-color: #6fa8dc;
+}
+
 body {
-  margin: 64px;
+  margin: 0px;
+  padding: 0px;
   background: #fff;
+}
+
+header {
+  margin: 0px;
+  padding: 0px;
+}
+
+main,
+footer,
+nav {
+  padding: 0px;
+  margin: 0px;
+}
+
+section {
+  padding: 6px;
 }
