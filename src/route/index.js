@@ -6,6 +6,13 @@ router.get('/', function (req, res) {
 
 })
 
+router.get('/blog', function (req, res) {
+  res.render('blog', {
+    layout: 'index',
+  })
+
+})
+
 router.get('/main', function (req, res) {
   res.render('main', {
     layout: 'index',
