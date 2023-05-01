@@ -1,0 +1,54 @@
+CSS
++ sidebar.css - needed Include
+
+HTML
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none; background-color: #9e1e10" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-mobile w3-large p-3 text-end me-2 border-dark mt-2"
+  onclick="w3_close()" style="-webkit-touch-callout: default;"><span class="rounded border border-dark fs-4 fw-medium p-3">Згорнути &times;</span></a>
+ <a href="#" class="w3-bar-item w3-button w3-mobile fs-4 fw-medium ms-3 my-2 p-3">Про Інститут</a>
+  <a href="#" class="w3-bar-item w3-button w3-mobile fs-4 fw-medium ms-3 my-2 p-3">Склад Інституту</a>
+  <a href="#" class="w3-bar-item w3-button w3-mobile fs-4 fw-medium ms-3 my-2 p-3">Новини, події</a>
+  <a href="#" class="w3-bar-item w3-button w3-mobile fs-4 fw-medium ms-3 my-2 p-3">Статті, аналітика</a>
+  <a href="#" class="w3-bar-item w3-button w3-mobile fs-4 fw-medium ms-3 my-2 p-3">Контакти</a>
+</div>
+  <button id="openNav" class="w3-button w3-xlarge rounded bg-dark text-light" onclick="w3_open()">&#9776;</button>
+
+JS - Scripts
+<script>
+// Toggle between hiding and showing blog replies/comments
+let minSize = 600;
+
+function hide_btn() {
+if (window.innerWidth <= minSize){
+  document.getElementById("openNav") ==
+}
+}
+document.getElementById("openNav").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "header");
+  }
+}
+</script>
+
+
+<script>
+
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>

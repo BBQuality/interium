@@ -1,0 +1,90 @@
+.container {
+    max-width: 1980px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  
+  .col-1 {
+    width: 8.333333%;
+  }
+  
+  .col-2 {
+    width: 16.666667%;
+  }
+  
+  .col-3 {
+    width: 25%;
+  }
+  
+  .col-4 {
+    width: 33.333333%;
+  }
+  
+  .col-5 {
+    width: 41.666667%;
+  }
+  
+  .col-6 {
+    width: 50%;
+  }
+  
+  .col-7 {
+    width: 58.333333%;
+  }
+  
+  .col-8 {
+    width: 66.666667%;
+  }
+  
+  .col-9 {
+    width: 75%;
+  }
+  
+  .col-10 {
+    width: 83.333333%;
+  }
+  
+  .col-11 {
+    width: 91.666667%;
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
+  
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12  {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+
+  .h1 {
+    color: #9e1e10f1;
+  }
+
+  .box5 {
+    box-shadow: 0px 0px 5px 0px rgba(128, 0, 0, 1);
+ }
+
+ .box13 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+              -23px 0 20px -23px rgba(0, 0, 0, .8),
+              23px 0 20px -23px rgba(0, 0, 0, .8),
+              inset 0 0 40px rgba(0, 0, 0, .1);
+}
+
+div.profile {
+  float: right;
+  width: 120px;
+  margin: 0 0 15px 20px;
+  padding: 15px;
+  border: 1px solid black;
+  text-align: center;
+}
