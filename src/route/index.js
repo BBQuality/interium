@@ -31,4 +31,14 @@ router.get('/andepchap', function (req, res) {
 
 })
 
+router.get('/department', function (req, res) {
+  res.render('department', {})
+
+})
+
+router.get('/andepyur', function (req, res) {
+  res.render('andepyur', {})
+
+})
+
 module.exports = router
