@@ -1,15 +1,29 @@
 .container {
-    max-width: 1980px;
-    margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 320px;
+  flex-wrap: wrap;
+  max-width: 480px;
+  flex-wrap: wrap;
+  max-width: 760px;
+  flex-wrap: wrap;
+  max-width: 960px;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  flex-wrap: wrap;
+  max-width: 1920px;
+	flex-wrap: wrap;
+    margin: 10px ;
   }
   
   .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  
+
   .col-1 {
     width: 8.333333%;
   }
@@ -69,6 +83,60 @@
     color: #9e1e10f1;
   }
 
+  .box {
+    box-shadow: inset 8px 6px 4px 0px rgba(128, 0, 0, 0.64),inset 19px 18px 25px 8px rgba(240, 230, 194, 0.6),0px 12px 21px -9px rgba(6, 63, 63, 0.72);
+}
+
+.box1 {
+	box-shadow: 10px 0px 2px 0px rgba(128, 0, 0, 1);
+ }
+
+.box2 {
+	box-shadow: -10px 0px 2px 0px rgba(128, 0, 0, 1);
+ }
+
+.box3 {
+	box-shadow: 0px 10px 10px 0px rgba(128, 0, 0, 1);
+ }
+
+ .box4 {
+	box-shadow: 0px -10px 2px 0px rgba(128, 0, 0, 1);
+ }
+
+.box5 {
+	box-shadow: 0px 0px 5px 0px rgba(128, 0, 0, 1);
+ }
+
+.box6 {
+	box-shadow: 3px 3px 5px 0px rgba(128, 0, 0, 1);
+ }
+
+.box7 {
+	box-shadow: 0px 0px 5px 5px rgba(128, 0, 0, 1);
+ }
+
+.box8 {
+	box-shadow: 3px 3px 5px 5px rgba(128, 0, 0, 1);
+ }
+
+.box13 {
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+				-23px 0 20px -23px rgba(0, 0, 0, .8),
+				23px 0 20px -23px rgba(0, 0, 0, .8),
+				inset 0 0 40px rgba(0, 0, 0, .1);
+  }
+  
+.box14 {
+	box-shadow: 6px 6px #989898, 12px 12px #6c6666;
+  }
+
+  .box18 {
+    box-shadow: -20px 20px 0 -17px #fff,
+                20px -20px 0 -17px #fff,
+                20px 20px 0 -20px #c27153,
+                0 0 0 2px #c27153;
+  }
+
   .box5 {
     box-shadow: 0px 0px 5px 0px rgba(128, 0, 0, 1);
  }
@@ -80,11 +148,170 @@
               inset 0 0 40px rgba(0, 0, 0, .1);
 }
 
+.res-win {
+  box-shadow: 1px 6px 25px -2px rgba(128, 0, 0, 0.73),2px -13px 23px 25px rgba(223, 209, 171, 0.61),
+  inset 0px -14px 25px 14px rgba(223, 216, 197, 1);
+  padding: 16px;
+}
+
+.res-cont {
+  box-shadow: 0px -9px 18px 17px rgba(228, 88, 88, 0.82),
+  inset 0px -20px 25px 24px rgba(228, 222, 209, 0.69),-1px 1px 16px 6px rgba(222, 228, 193, 0.52);
+ }
+
+ .inside-box {
+  box-shadow: 4px 4px 23px 0px rgba(238, 229, 221, 1),
+  2px -5px 23px 3px rgba(238, 235, 223, 1),
+  inset 0px 0px 18px 19px rgba(238, 233, 218, 0.42);
+  }
+
+  .title-row {
+    background-color: rgba(104, 10, 10, 0.973);
+    padding: 15px;
+    color: rgba(240, 227, 172, 0.938);
+    
+  }
+/* Блок CSS із оформленням BOXes / ROWs / COLUMNs / CONTAINERs - END */
+
+
+/* Стилістика тексту */
+.resume {
+  font-family: georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  font-variant: small-caps;
+  line-height: 28px;
+  text-align: justify;
+  text-decoration: blink;
+  text-indent: 30px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+/* Стилістика тексту */
+
+.description {
+  font-family: georgia;
+  font-style: normal;
+  font-weight: small-caps;
+  font-size: 20px;
+  font-variant: small-caps;
+  line-height: 22px;
+  text-align: justify;
+  text-decoration: blink;
+  text-indent: 15px;
+  letter-spacing: 0;
+  word-spacing: 0;
+  font-size-adjust: 0.75;
+  text-justify: auto;
+  text-align-last: left;
+}
+
+
+/* Блок для стилістики секцій - об'єднання - STart */
+
+#cssDisplay {
+  background-image: URL(/../img/background_full.png);
+  background-color: #e2d8a6ec;
+  background-attachment: relative;
+  color: rgba(104, 10, 10, 0.979);
+  border: 1px solid #6D6D6D;
+  margin: 2px;
+  padding: 10px;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  box-shadow: 0px 0px 20px #800000,
+  inset 0px 0px 25px 25px rgba(223, 216, 197, 1);
+  max-width: auto;
+  max-height: auto;
+}
+
+#cssDisplayNews {
+  background-color: #e2d8a6ec;
+  background-attachment: relative;
+  color: rgba(104, 10, 10, 0.979);
+  border: 1px solid #6D6D6D;
+  margin: 2px;
+  padding: 10px;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  box-shadow: 0px 0px 20px #800000,
+  inset 0px 0px 25px 25px rgba(223, 216, 197, 1);
+  max-width: auto;
+  max-height: auto;
+}
+
 .profile {
   float: right;
   width: 900px;
-  margin: 0 0 15px 20px;
+  margin: 0 0 15px 10px;
   padding: 15px;
   border: 1px solid black;
-  text-align: center;
+  text-align: space around;
 }
+
+.flex-person {
+  display: block;
+  margin-right: 0px;
+  float: left;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 90%;
+  max-width: 450px;
+  border-radius: 5px;
+  padding: 1em;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-between;
+}
+
+.flex-person-box {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: space-between;
+}
+
+.flex-person-item:nth-child(1) {
+  display: block;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex-shrink: 3;
+  flex-basis: 0;
+  justify-content: flex-start;
+
+}
+
+.flex-person-item:nth-child(2) {
+  display: block;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex-shrink: 3;
+  flex-basis: 0;
+
+}
+
+.flex-person-item:nth-child(3) {
+  display: block;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex-shrink: 3;
+  flex-basis: 0;
+
+}
+
+.cleared {
+  clear: left;
+}
+
+/* Блок для стилістики секцій - об'єднання - END */
