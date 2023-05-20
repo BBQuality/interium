@@ -6,6 +6,16 @@ router.get('/', function (req, res) {
 
 })
 
+router.get('/intermarium-concept', function (req, res) {
+  res.render('concept', {})
+
+})
+
+router.get('/about', function (req, res) {
+  res.render('director', {})
+
+})
+
 router.get('/index', function (req, res) {
   res.render('index', {})
 

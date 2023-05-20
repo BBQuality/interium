@@ -1,31 +1,30 @@
 .container {
-  flex-wrap: wrap;
+ 
   max-width: 320px;
-  flex-wrap: wrap;
   max-width: 480px;
-  flex-wrap: wrap;
   max-width: 760px;
-  flex-wrap: wrap;
   max-width: 960px;
-  flex-wrap: wrap;
   max-width: 1280px;
-  flex-wrap: wrap;
   max-width: 1600px;
-  flex-wrap: wrap;
   max-width: 1920px;
-	flex-wrap: wrap;
-    margin: 10px ;
+  margin: 10px;
   }
   
   .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 10px;
-    margin-right: 10px;
+    display: block;
+    flex-wrap: nowrap;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-sizing: border-box;
+  }
+  .col {
+    width: 100%;
+    margin: 0 auto;
   }
 
   .col-1 {
     width: 8.333333%;
+    flex-wrap: nowrap;
   }
   
   .col-2 {
@@ -46,6 +45,7 @@
   
   .col-6 {
     width: 50%;
+    flex-wrap: nowrap;
   }
   
   .col-7 {
@@ -74,16 +74,18 @@
   
   .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12  {
     display: flex;
+    flex-wrap: nowrap;
     padding-left: 10px;
     padding-right: 10px;
-    box-sizing: border-box;
+    box-sizing: content-box;
   }
 
   .h1 {
-    color: #9e1e10f1;
+    color: rgba(255, 245, 201, 0.877);
   }
 
   .box {
+    box-sizing: border-box;
     box-shadow: inset 8px 6px 4px 0px rgba(128, 0, 0, 0.64),inset 19px 18px 25px 8px rgba(240, 230, 194, 0.6),0px 12px 21px -9px rgba(6, 63, 63, 0.72);
 }
 
@@ -151,7 +153,7 @@
 .res-win {
   box-shadow: 1px 6px 25px -2px rgba(128, 0, 0, 0.73),2px -13px 23px 25px rgba(223, 209, 171, 0.61),
   inset 0px -14px 25px 14px rgba(223, 216, 197, 1);
-  padding: 16px;
+  padding: 5px;
 }
 
 .res-cont {
@@ -167,65 +169,53 @@
 
   .title-row {
     background-color: rgba(104, 10, 10, 0.973);
-    padding: 15px;
+    padding: 25px;
     color: rgba(240, 227, 172, 0.938);
     
   }
-/* Блок CSS із оформленням BOXes / ROWs / COLUMNs / CONTAINERs - END */
 
-
-/* Стилістика тексту */
 .resume {
   font-family: georgia;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  font-variant: small-caps;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 12px;
   text-align: justify;
   text-decoration: blink;
-  text-indent: 30px;
+  text-indent: 16px;
   letter-spacing: 1px;
   word-spacing: 1px;
 }
-/* Стилістика тексту */
 
 .description {
   font-family: georgia;
   font-style: normal;
-  font-weight: small-caps;
-  font-size: 20px;
+  font-weight: normal;
+  font-size: 18px;
   font-variant: small-caps;
-  line-height: 22px;
+  line-height: 18px;
   text-align: justify;
   text-decoration: blink;
-  text-indent: 15px;
-  letter-spacing: 0;
-  word-spacing: 0;
-  font-size-adjust: 0.75;
-  text-justify: auto;
-  text-align-last: left;
+  text-indent: 16px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
 }
 
-
-/* Блок для стилістики секцій - об'єднання - STart */
-
 #cssDisplay {
-  background-image: URL(/../img/background_full.png);
+  background-image: URL('/../img/background_full.webp');
   background-color: #e2d8a6ec;
-  background-attachment: relative;
+  background-attachment: fixed;
   color: rgba(104, 10, 10, 0.979);
   border: 1px solid #6D6D6D;
   margin: 2px;
-  padding: 10px;
+  padding: 2px;
   position: relative;
   justify-content: space-around;
   align-items: center;
-  align-content: space-around;
+  align-content: space-between;
   box-shadow: 0px 0px 20px #800000,
   inset 0px 0px 25px 25px rgba(223, 216, 197, 1);
-  max-width: auto;
-  max-height: auto;
+
 }
 
 #cssDisplayNews {
@@ -249,13 +239,12 @@
   float: right;
   width: 900px;
   margin: 0 0 15px 10px;
-  padding: 15px;
+  padding: 5px;
   border: 1px solid black;
   text-align: space around;
 }
 
 .flex-person {
-  display: block;
   margin-right: 0px;
   float: left;
   flex-wrap: wrap;
@@ -273,7 +262,7 @@
 }
 
 .flex-person-box {
-  margin: 10px;
+  margin: 5px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -289,7 +278,6 @@
   flex-shrink: 3;
   flex-basis: 0;
   justify-content: flex-start;
-
 }
 
 .flex-person-item:nth-child(2) {
@@ -298,7 +286,6 @@
   flex-grow: 1;
   flex-shrink: 3;
   flex-basis: 0;
-
 }
 
 .flex-person-item:nth-child(3) {
@@ -307,11 +294,65 @@
   flex-grow: 1;
   flex-shrink: 3;
   flex-basis: 0;
-
 }
 
 .cleared {
   clear: left;
 }
 
-/* Блок для стилістики секцій - об'єднання - END */
+
+@import url("reset.css");
+
+p {
+    padding: 5px;
+}
+
+
+#headerTitle {
+  font-family: 'Playfair Display', serif;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: auto;
+    min-width: 10%;
+    max-width: 80%;
+    flex-wrap: nowrap;
+}
+
+#content {
+    background: rgba(255, 245, 201, 0.877);
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    margin: 0 auto;
+    padding: 50px;
+    float: center;
+    flex-wrap: nowrap;
+    position: fixed;
+}
+
+#leftcolumn {
+    background: rgba(255, 245, 201, 0.877);
+    border-radius: 2px;
+    border: 1px solid rgba(151, 19, 19, 0.873);
+    min-width: 100px;
+    max-width: 100%;
+width: auto;
+height: auto;
+     float: left;
+     margin: 1 1;
+}
+
+
+#rightcolumn {
+ 
+    border-radius: 2px;
+    border: 1px solid;
+    margin: 0 auto;
+    min-width: 100px;
+    max-width: 100%;
+width: auto;
+height: auto;
+    float: center;
+    position: relative;
+}

